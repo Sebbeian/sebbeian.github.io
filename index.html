@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <title>Sebastian K. Bech</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.scss"
+</head>
+<body>
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="#utdanning" class="nav-link">Utdanning</a>
+                </li>
+                <li>
+                    <a href="#jobberfaring" class="nav-link">Erfaring</a>
+                </li>
+                <li>
+                    <a href="#annet" class="nav-link">Kurs</a>
+                </li>
+                <li>
+                    <a href="#annet" class="nav-link">Frivillig arbeid</a>
+                </li>
+                <li>
+                    <a href="#annet" class="nav-link">Sertifiseringer</a>
+                </li>
+                <li>
+                    <a href="#annet" class="nav-link">Utmerkelser</a>
+                </li>
+                <li>
+                    <a href="#kompetanse" class="nav-link">Kompetanse</a>
+                </li>
+                <li>
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Sebastian Kvamme Bech</h1>
+        </div>
+    </header>
+
+    <section class="om" id="om">
+        <div class="container">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+                <img src="images/profil1.png">
+            </div>
+            <div class="om-details">
+                <div class="om-heading" data-aos="fade-left" data-aos-delay="300">
+                    <h1>Om</h1>
+                    <h6>Meg</h6>
+                </div>
+                <br><br>
+                <p>“Jeg er en ambisiøs og teknologiglad gutt/mann som alltid er på søken etter å lære noe nytt. Jeg trives godt med ansvar, selvstendig arbeid og arbeid i team.
+                  Og har enda til overs å møte på en god utfrodring jeg ikke er villig til å ta.
+                  <br><br>
+                  På fritiden liker jeg å spille dataspill, arrangere LAN, gå på turer i den Bergenske fjellheimen og lage mat, da spesielt italisensk mat.
+                  Å nevne en favorittfilm er alltid skummelt, men Gladiatoren er såpass bra at jeg enda ikke har angret på å velge den.
+                  ”</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="utdanning" id="utdanning">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Utdanning</h1>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="2021 - 2023">
+                        <h1>Informatikk - Universitet i Bergen</h1>
+                        <h3>Nivå: Master (Spesialisering: Sikker og pålitelig Kommunikasjon)</h3>
+                        <br>
+                        <p>Hovedfag innenfor kryptoanalyse, kryptologi, algoritmer og informasjonsteori.</p>
+                        <br>
+                        <button class="button" onclick="showFag1()" id="showBtn1">Se liste over fag</button><p><span id="dots1">...</span><span id="fag1">
+                          <br><br><br>
+                          <i>Alle emner utgjør 10 studiepoeng, mens masteren utgjør 60 poeng. DAT er Datafag, MAT er Mattefag, INF er informatikk-fag</i>
+                          <br><br><br>
+                          <strong><u>Kryptografi & kryptoanalyse - 120 studiepoeng</u></strong><br><br>
+                          INF234 - Algoritmer<br><br>
+                          INF242 - Informasjonsteori<br><br>
+                          INF245 - Berekningsorientert talteori og asymmetrisk kryptografi<br><br>
+                          INF240 - Basic Tools for Coding theory and Cryptography <i>(våren 2022)</i><br><br>
+                          INF241 - Quantum Information, Quantum Computing, and Quantum Cryptography <i>(våren 2022)</i><br><br>
+                          INF247 - Innføring i kryptoanalyse av symmetriske chiffer <i>(våren 2022)</i><br><br>
+                          INFSI - Masteroppgave i Informatikk - sikker og pålitelig kommunikasjon<i>(2022-2023)</i><br><br>
+                        </span><p>
+                    </li>
+                    <li class="date" data-date="2021">
+                        <h1>Prosjektledelse - Høyskolen Kristiania</h1>
+                        <h3>Nivå: Årsstudium</h3>
+                        <br>
+                        <p>Teori om prosjektleders rolle i prosjekter, samt praktisk gjennomførting av et eget prosjekt.
+                        Her valgte jeg å lage et app-prosjekt som kunne gi meg gode erfaring opp mot et lignende reelt prosjekt i framtiden.</p>
+                    </li>
+                    <li class="date" data-date="2021">
+                        <h1>Datasikkerhet og digital infrastruktur - Tisip</h1>
+                        <h3>Nivå: Bachelor (Sommerkurs)</h3>
+                        <br>
+                        <p>2 seperate IT-kurs; ett innenfor digital infrastriktur og ett innenfor digital sikkerhet.
+                        Begge kursene var balansert mellom det praktiske og teoretiske. Brukte en del wireshard, GDPR og fikk innføring i ISO-modellen.
+                        Fikk også en forståelse for alle de store formene for dataangrep og tiltak for å motvirke dem.</p>
+                    </li>
+                    <li class="date" data-date="2020 - 2021">
+                        <h1>Informatikk - Universitet i Bergen</h1>
+                        <h3>Nivå: Bachelor (Spesialisering: Datasikkerhet)</h3>
+                        <br>
+                        <p>Tok fag som var anbefalt å inneha for å gjennomføre og mestre masteren i Informatikk.
+                        Dette var fag som Linear algebra, Programvaresikkerhet, Innføring i datasikkerhet og Code theory</p>
+                        <br>
+                        <button onclick="showFag2()" class="button" id="showBtn2">Se liste over fag</button><p><span id="dots2">...</span><span id="fag2">
+                          <br><br><br>
+                          <i>Alle emner utgjør 10 studiepoeng. DAT er Datafag, MAT er Mattefag, INF er informatikk-fag</i>
+                          <br><br><br>
+                          <strong><u>Diverse sikkerhets-emner - 50 studiepoeng</u></strong><br><br>
+                          INF100 - Grunnleggende programering (Python)<br><br>
+                          INF140 - Grunnleggende datasikkerhet<br><br>
+                          INF143 - Anvendt kryptografi<br><br>
+                          MAT121 - Linear Algebra<br><br>
+                          DAT101 - Modellering og databaser<br><br>
+                        </span><p>
+                    </li>
+                    <li class="date" data-date="2015 - 2021">
+                        <h1>Dataingeniør - Høyskolen på Vestlandet</h1>
+                        <h3>Nivå: Bachelor (Spesialisering: Drift, sikkerhet og databaser)</h3>
+                        <br>
+                        <p>Alt fra grunnleggende programmering til drift av store databser og håndtering av store systemer.</p>
+                        <br>
+                        <button onclick="showFag3()" class="button" id="showBtn3">Se liste over fag</button><p><span id="dots3">...</span><span id="fag3">
+                          <br><br><br>
+                          <i>Alle emner utgjør 10 studiepoeng ved unntak av DAT190 som gjelder for 20 studiepoeng. DAT er Datafag, MAT er Mattefag, ING er Ingeniørfag og INF er informatikk-fag</i>
+                          <br><br><br>
+                          <strong><u>Data-emner - 120 studiepoeng</u></strong><br><br>
+                          DAT100 - Grunnleggende programmering (Java)<br><br>
+                          DAT102 - Algoritmer og datastrukturer<br><br>
+                          DAT103 - Datamaskiner og operativsystemer<br><br>
+                          DAT107 - Databaser<br><br>
+                          DAT108 - Programmering og webapplikasjoner<br><br>
+                          INF112 - Systemutvikling<br><br>
+                          INF142 - Datanett<br><br>
+                          INF226 - Programvaresikkerhet<br><br>
+                          DAT150 - Nettverksadministrasjon, drift og sikkerhet<br><br>
+                          DAT151 - Drift av Unix og databaser<br><br>
+                          DAT190 - Bacheloroppgave: <i>Bruk av AI for å detektere jamming på NKOM (Nasjonal Kommunikasjonsmyndighet) sin hovedlinje</i><br><br>
+                          <br><br><br><br>
+                          <strong><u>Matte-emner - 30 studiepoeng</u></strong><br><br>
+                          MAT111 - Calculus 1<br><br>
+                          MAT101 - Diskret matemattikk 1<br><br>
+                          MAT102 - Diskret matematikk og statestikk<br><br>
+                          <br><br><br><br>
+                          <strong><u>Ingeniør-emner - 30 studiepoeng</u></strong><br><br>
+                          ING101 - Teknologiledelse, økonomi og nyskaping<br><br>
+                          ING102 - Ingeniørfaglig yrkesutøvelse og arbeidsmetoder for datafag<br><br>
+                          DAT106 - Fysikk og kjemi for data<br><br>
+                          <br><br><br><br>
+                        </span><p>
+
+                    </li>
+                    <li class="date" data-date="2012 - 2013">
+                        <h1>Ledelse - Forsvarets befalsskole</h1>
+                        <h3>Nivå: Årsstudium (Spesialisering: Rekruttskole instruktør)</h3>
+                        <br>
+                        <p>Studiet besto i hovedsak av militær ledelse, taktisk krigføring, våpentekniske fag og instruktør-rollen</p>
+                    </li>
+                    <li class="date" data-date="2008 - 2011">
+                        <h1>Studiespesialiserende - Fyllingsdalen VGS</h1>
+                        <h3>Nivå: VGS</h3>
+                        <br>
+                        <p>Studiekompetanse med vektfag innenfor realfag.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobberfaring" id="jobberfaring">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Arbeidserfaring</h1>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="2020 - ">
+                        <h1>Arbeidsleder IT / Konsulent - ALF as</h1>
+                        <p>Laget et Utviklerkurs fra bunnen, som jeg har kurset rundt 30 deltakere med til nå. Kurset varer 4 måneder og tar for seg temaer som;
+                          HMTL, CSS, Javascript, Databaser, Python-programmering, Systemutvikling og UI/UX-design. Etter kurser blir deltakerne fulgt opp
+                          i ekstern praksis i en IT-bedrift hvor de får arbeidserfaring.
+                          <br><br>
+                          Utenom kurset er en ansvarlig for generelle IT-relaterte oppgaver; som oppsett og drift av nettside
+                          for Erasmus+, gjennomføre datakurs for ansatte og andre oppgaver som bedriften er daglig avhengig av.</p>
+                    </li>
+                    <li class="date" data-date="2021">
+                        <h1>Teknisk eksamensvakt og hall-ansvarlig - Handelshøyskolen BI</h1>
+                        <p>Bistå studenter med teknisk veiledning eller ved feil. Fikk også i oppdrag å finne en ny hall som skolen kunne benytte som
+                        eksamenslokale, samt bestille inn alt av nødvendig utstyr, nett og strøm. Fikk admin-opplæring i Wiseflow, som er et eksamenssystem
+                        for å låse PC'ene under eksamen.</p>
+                    </li>
+                    <li class="date" data-date="2013 - 2022">
+                        <h1>Sikkerhetskontrollør - STAS (Securitas AS)</h1>
+                        <p>Gjennomføre sikkerhetssjekker av passasjerer og bagasje, samt kontrollere perimeteret inn mot flyplassen og vareleveringer. Stillingen krever
+                        godkjent eksamen som X-ray maskinfører og eksamen i Luftfarttilsynets lover og regler. Hadde lederoppdrag i forbindelse med spesialfly for sommeren 2018 og 2019,
+                        samt innimellom i normal drift ved behov.</p>
+                        <br><br>
+                        <button data-js="open" type="button" value="Last ned attest" class="button" onClick="passwd()">Last ned attest</button>
+                    </li>
+                    <li class="date" data-date="2011 - 2018">
+                        <h1>Vekter / vaktleder - Securitas AS</h1>
+                        <p>Gjennomføre en del forskjellige sikkerhetsoppdrag for Securitas AS innenfor stasjonær, vakhold og uteliv. På en del av objektene fungerte jeg
+                        også som vaktleder.</p>
+                    </li>
+                    <li class="date" data-date="2020">
+                        <h1>Prosjektmanager IT - Norwegian Energy</h1>
+                        <h3>Prosjektstilling</h3>
+                        <br>
+                        <p>Ansarlig for å utrede og sette opp IT-løsninger, samt vedlikeholde eksisterende løsninger som skulle videreføres. Jobbet også med å utarbeide
+                          rettslige dokumenter og sette opp budsjetter. Dette var en prosjektstilling og den ble dessverre avsluttet etter bare 3 måneder grunnet korona.</p>
+                    </li>
+                    <li class="date" data-date="2016">
+                        <h1>Hjelpelærer økonomilinjen - Høyskolen på Vestlandet</h1>
+                        <p>Ble hyret inn for å bistå en lærer på økonomilinjen i et IT-relatert fag. Dette faget gikk i hovedsak ut på bruk av MS Office og generell OS.
+                        Gruppen jeg lærte opp bestod av ca 40 økonomistudenter.</p>
+                    </li>
+                    <li class="date" data-date="2016 - 2018">
+                        <h1>Studiekvalitetsansvarlig - Høyskolen på Vestlandet</h1>
+                        <p>Satt i et styret på Høyskolen som gikk igjennom tilbakemeldinger fra studentene og etablere løsninger for eventuelle ting som ikke fungerte.</p>
+                    </li>
+                    <li class="date" data-date="2012 - 2013">
+                        <h1>Befal / Instruktør - Forsvaret</h1>
+                        <p>Instruerte over 100 rekrutter i generelle soldatferdigheter, samt bisto i den daglige driften av troppen og kompaniet. Rekruttskolen er første møte
+                        som soldatene har med Forsvaret og det er viktig at de får god opplæring og oppfølging slik at de er rustet for å gjennomføre tjenesten sin videre.
+                        Hovedemnene jeg hadde var Sanitet, våpentekniske ferdigheter, skyting og stridsoverlevelse.</p>
+                    </li>
+                    <li class="date" data-date="2011 - 2012">
+                        <h1>Vaktkommandør / lagfører - Forsvaret</h1>
+                        <h3>Førstegangstjenesten</h3>
+                        <br>
+                        <p>Ledet et lag på 5 som sørget for vaktholdet på Akershus festning i Oslo sentrum. Stillingen bestod i generelt vakthold av festningen, drift av kjøretøy, vakhold av Forsvarsjefens bolig,
+                          samt håndtere utrykking og alarmer. Vaktholdet varierte mellom skift på dag og natt.</p>
+                    </li>
+                    <li class="date" data-date="2010">
+                        <h1>Servicemedarbeider - Skyss</h1>
+                        <h3>Sommerjobb</h3>
+                        <br>
+                        <p>Veiledet publikum opp imot Bybanen i anledning oppstart av linjen. Her lærte jeg publikum å bruke de nye billettautomatene, bestilling av skyss-kort og andre henvendelser vedrørende Bybane eller Skyss generelt.</p>
+                        <br><br>
+                        <button data-js="open" type="button" value="Last ned attest" class="button" onClick="passwd()">Last ned attest</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="annet" id="annet">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Kurs</h1>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="2021">
+                        <h1>IT-sikkerhetskurs for ledere - ATEA</h1>
+                        <p>Kurs i hvordan IT-ledere kan skape god sikkerhetskultur og kan se etter tegn til uheldige sikkerhetsmomenter.</p>
+                    </li>
+                    <li class="date" data-date="2021">
+                        <h1>Digital infrastruktur og datasikkerhet - Fagskolen i Vestfold og Telemark</h1>
+                        <p>Kurs i hvordan en kan skape sikkerhets-relaterte løsninger for ulike bedrifter og
+                        implimentere små enkle tiltak for å sikre bedriften for de letteste typene av cyberkriminalitet.</p>
+                    </li>
+                    <li class="date" data-date="2021">
+                        <h1>Pandemi og krisepsykologi - Universitet i Bergen</h1>
+                        <p>UiB fag basert rundt hvordan korona og andre pandemier påvirker samfunnet vårt og hva typer psykiske følger det kan få for
+                        den gennerelle befolkningen og personer med spesielle behov. Den tar også for seg krisesystemene og handling ved en pandemi.</p>
+                    </li>
+                    <li class="date" data-date="2021">
+                        <h1>Internasjonalt samarbeid - Erasmus (EU)</h1>
+                        <p>Kurs i hvordan en kan samarbeide internasjonalt om å få ungdom ut på arbeidsmarkedet og tilrettelegge for å skape kunnskap rundt softskills.</p>
+                    </li>
+                    <li class="date" data-date="2021">
+                        <h1>POWER BI - PwC</h1>
+                        <p>Bruk av POWER BI som verktøy. Gjennomførte et par praktiske caser med data fra Bergen Bysykkel og Foodora.</p>
+                    </li>
+                    <li class="date" data-date="2019">
+                        <h1>Troppssjefskurs - Heimevernet</h1>
+                        <p>Ledelse av en tropp i strid, taktisk planlegging og oppdragsformidling. Jeg gjennomførte også kuring i skytebane-ledelse også,
+                        slik at jeg kan lede skytinger ved Forsvarets skytefelt.</p>
+                    </li>
+                    <li class="date" data-date="2019">
+                        <h1>Sikkerhetskurs - Heimevernet</h1>
+                        <p>Sikkerhetskurs relatert til stilling i Heimevernet.</p>
+                    </li>
+                    <li class="date" data-date="2011">
+                        <h1>Lagførerkurs - Forsvaret</h1>
+                        <p>Ledelse av lag fra 3-10 mann over lengre perioder og under stress.</p>
+                    </li>
+                    <li class="date" data-date="2011">
+                        <h1>Sikkerhet, vakthold og anti-terror - Forsvaret</h1>
+                        <p>Kursing i bruk av maktmidler som batong, pepeprspray, våpen og håndjern. Teori rundt sprengstoff, skadeomfang og virkemetode.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="frivillig" id="frivillig">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Frivillig arbeid</h1>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="2019 - ">
+                        <h1>Styreleder - ByLAN</h1>
+                        <p>Leder et styret på 9 personer som skal drifte og utvikle organisasonen. Dette innebører oppsett av finansielle dokumenter, parlamentaristiske prosedyrer,
+                        overse driften og etablere samarbeidskontrakter med interesseorganisasjoner.</p>
+                    </li>
+                    <li class="date" data-date="2020">
+                        <h1>Nettverksansvarlig - HordaLAN</h1>
+                        <p>Bestille, sette opp og drifte nettverks-relaterte prosedyrer. Ledet et team på 8 stykker som satt opp nettverket,
+                          overvåket trafikk over nettet og løste nettverks-relaterte feil som oppsto.</p>
+                    </li>
+                    <li class="date" data-date="2019 - 2020">
+                        <h1>Arrangementsleder - HordaLAN</h1>
+                        <p>Ledet arrangementskomiteen som var ansavrlig for å avholde hovedarrangementet til HordaLAN Dataforening. Arrangementskomiteen består av 15 personer
+                        hver har sitt ansavrsområde og eget crew. Det totale antallet crew er på rundt 120 personer. I 2019 hadde arrangementet rekordår og vi klarte
+                        å skape en ny og større interesse for LAN på Vestlandet.</p>
+                    </li>
+                    <li class="date" data-date="2018 - 2019">
+                        <h1>Crew- og sikkerhetsleder - HordaLAN</h1>
+                        <p>På organisasjonens sitt sommerLAN fikk jeg ansvaret for håndtere alt av crew- og sikkerhets-relaterte oppgaver. Crewet besto av rundt 20 personer
+                        som utgjorde filmcrew, sikkerhetscrew og gamecrew.</p>
+                    </li>
+                    <li class="date" data-date="2016 - 2017">
+                        <h1>Nestleder jubileumskomiteen for BTS 140 år  - Bergen Teknikersamfund</h1>
+                        <p>Arrangerte et stor fest i Grieghallen for nåværende og tidligere medlemmer av organisasjonen. Det ble en stor markering av organisasjonens
+                        drift i 140 år, igjennom 2 verdenskriger og alt med. Det var taler fra gamle riddere i organisasjonen fra så tidlig som 60-tallet og mye god underholdning.</p>
+                    </li>
+                    <li class="date" data-date="2017 - 2018">
+                        <h1>Formand - Bergen teknikersamfund</h1>
+                        <p>Leder for Bergens eldste og Norges nest eldste studentforening (1877). Studentforeningen rommer alle linjene ved Høyskolen på Vestlandet med 15 000 studenter
+                        og har rundt 400 personer i crew eller arbeidsgrupper. En har ansvar for at drifte et styret på 15 personer som dekker alle organisasjonens undergrupper,
+                        samt sørge for at finansielle og parlamentaristiske systemer følges. Teknikersamfundet har eget representant i 17.mai-komiteen og Formand holder tale
+                        på Vikingskipet.</p>
+                    </li>
+                    <li class="date" data-date="2016 - 2018">
+                        <h1>Styremedlem - Dirik Pihls Legat</h1>
+                        <p>Veldedig organisasjon for FIN (Høgskolen på Vestlandet sin Ingeniøravdeling). Jeg deltok på å bestemme hvor de veldide midlene skulle doneres,
+                        samt hvilke krav som skulle settes for at organisasjoner skulle kunne modta donasjoner.</p>
+                    </li>
+                    <li class="date" data-date="2015 - 2018">
+                        <h1>IT-ansvarlig - Root linjeforening</h1>
+                        <p>Løse alle IT-relaterte arbeidsopgaver. Mens jeg satt i styret sto jeg også i spissen for å rebrande og forbedre linjeforeningen. Dette da linjeforeningen
+                        ikke var aktiv og skapte et godt nok tilbud for studentene ved linjen eller arrangement som koblet studentene opp imot arbeidsmarkedet. </p>
+                    </li>
+                    <li class="date" data-date="2016 - 2017">
+                        <h1>Leder Næringslivsutvalget - Bergen Teknikersamfund</h1>
+                        <p>Hovedfokuset til Næringslivutvalget er å arrangere Karrieredagen, som er et stort arrangement hvor bedriftene inviteres til Høyskolen for å se etter
+                        potensielle kandidater for stillingene sine. Det er også et stort arrangement på kvelden etter karrieredagen med show, mat og mingling. Utenom dette
+                        arrangeres det kurs i CV-skriving, jobb-intervju og annet jobb-relatert.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sertifiseringer" id="sertifiseringer">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Sertifiseringer</h1>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                  <li class="date" data-date="2021">
+                      <h1>Microsoft Azure - Fundemental (påbegynt)</h1>
+                      <p>Sikre skyløsninger og virutelle maskiner.</p>
+                  </li>
+                    <li class="date" data-date="2021">
+                        <h1>Båtførerprøven</h1>
+                        <p>Manuvrering av båt og vannbårne kjøretøy.</p>
+                    </li>
+                    <li class="date" data-date="2011">
+                        <h1>Førerkort klasse B</h1>
+                        <p>Førerkort for bruk av bil og moped.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="utmerkelser" id="utmerkelser">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Utmerkelser</h1>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                  <li class="date" data-date="2019">
+                      <h1>Beste elev Troppssjefskurs</h1>
+                      <p>Tildeles den eleven som har best måloppnåelse ved Heimevernets troppsjefskurs.</p>
+                  </li>
+                  <li class="date" data-date="2018">
+                      <h1>Ridder av Den Gyldne Regnestav</h1>
+                      <p>Bergen Teknikersamfunds øverste ærespris til studenter som utgjør en svært stor innsats for studentsamfunnet ved Høyskolen.</p>
+                  </li>
+                  <li class="date" data-date="2013">
+                      <h1>Utskrevet Sersjant</h1>
+                      <p>Forsvarets bevis for gjennomført befalsskole.</p>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+    </section>
+
+    <section class="kompetanse" id="kompetanse">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Kompetanse</h1>
+            </div>
+            <div class="kompetanse-item">
+                <div class="kompetanse-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src="images/liten.png">
+                </div>
+                <div class="kompetanse-description" data-aos="fade-right" data-aos-delay="300">
+                    <h1><strong>Teknologi</strong></h1>
+                    <br>
+                    <p>Helt siden jeg var liten har jeg vært inspirert, fascinert og opptatt av teknologi!
+                        Alt fra en printer som kan tegne på ark til kalkuleringer av kryptonøkler gjør meg like begeistret hver gang. What a time to be alive!
+                        <br><br>
+                        Jeg har lekt en god del med diverse hjemmelektronikk og har i en årrekke vært familiens personlige IT-ansvarlige.<br>
+                        På LAN har jeg fått bryne meg på nettverk og brannmur, samt å sette opp nettsider og digitalt crew-system.<br>
+                        Via skolen har jeg fått laget nettsider, program og satt opp databaser, men kanskje viktigst har det vært å lære om Datasikkerhet og sikkerhetskultur i den moderne teknologiske verden.
+                        <br><br>
+                        Min erfaring rundt teknologiledelse og teknologiske løsninger føler jeg er relativt god, men jeg har enda mye å lære. Noe jeg gleder meg veldig til, nesten som et barn!
+</p>
+                </div>
+            </div>
+            <div class="kompetanse-item">
+                <div class="kompetanse-description" data-aos="fade-left" data-aos-delay="300">
+                    <h1><strong>Ledelse</strong></h1>
+                    <br>
+                    <p>Igjennom over 10 år har jeg hatt gleden av å ha en eller annen form for lederrolle, enten liten eller stor. Alt fra minste første assistende skiftleder-rolle på Skyss
+                       til å nå være styreleder i det som er Norges nest største LAN.
+                    <br><br>
+                        På veien har jeg ledet utrolig mange forskjellige mennesker og lært utrolig mye fra dem. Ingen person er lik og ingen lederrolle krever det samme av deg.
+                        Det å lede tropper i Forsvaret, studenter i studentorganisasjoner og spillentusiaster på LAN er helt forskjellig og alle har hvert sitt unike preg.
+                        Den bredden av ledelse har gitt meg et uvurderlig innblikk i hva som motiverer og driver folk, samt hva det krever av meg som leder for å skape rom for vekst og tillit.
+</p>
+                </div>
+                <div class="kompetanse-img" data-aos="fade-left" data-aos-delay="300">
+                    <img src="images/mil.png" style="float:right">
+                </div>
+            </div>
+            <div class="kompetanse-item">
+                <div class="kompetanse-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src="images/programming.png">
+                </div>
+                <div class="kompetanse-description" data-aos="fade-left" data-aos-delay="300">
+                    <h1><strong>Kode-genet</strong></h1>
+                    <br>
+                    <p>Koding er noe jeg lenge har fascinert meg over og lekt med, men det ble til slutt også min karrieresti.
+                       Det å skrive kode som en maskin kan lese, er bare helt absurd og fantastisk. Og jeg blir daglig overrasket over hva vi kan oppnå med kode.<br><br>
+                       Det meste av programmering og teknologiske løsninger har jeg lært igjennom utdanningen, men har også lært meg en del på siden for å få en mer helhetlig forståelse og kompetanse i faget.
+                       Språk jeg føler meg godt stødig på er; <b style="color:lightgreen">Python</b>, <b style="color:orange">Java</b>, <b style="color:#f0e68c">Javascript</b>,
+                       <b style="color:#f08080">HTML</b>, <b style="color:lightblue">CSS</b>, <b style="color:#f984ef">SQL</b>, <b style="color:#966fd6">XML</b> og <b style="color:#ffb077">JSON</b>.<br><br>
+                       Utenom direkte språk har jeg kompetanse innenfor sikkerhets-løsninger, Linux, Systemutvikling, nettside-oppsett, virtuelle servere, Brannmur og sikkerhets-kultur.
+                </div>
+            </div>
+            <div class="kompetanse-item">
+                <div class="kompetanse-description" data-aos="fade-left" data-aos-delay="300">
+                    <h1><strong>Sikkerhet</strong></h1>
+                    <br>
+                    <p>Sikkerhet er et fagfelt jeg har fått utprøvd meg mye i, både fysisk og digitalt. I Forsvaret og Securitas har jeg
+                       lært mye om hvordan en etablerer fysiske sikringstiltak, samt hvordan en tenker sikkerhet og trussler opp imot fysiske system.
+                       Via utdannelsen min har jegt lært hvordan jeg skal tenke på sikkerhet og trussler digitalt. Selv om mye er overførbart
+                       i fagfeltet, er det samtidig to seperate deler og jeg har sett stor nytte i å samspille de to tankemåtene.
+                    <br><br>
+                      Det å tenke sikkerhetskultur, forutse trussler på forhånd og ta grundige risikovurderinger, er noe jeg har blitt god på.
+                      Og jeg har med tiden fått gode tips og tankemåter servert igjennom mengder med kurs, webinar og samtaler med sikkerhetspersonell
+                      i forskjellige yrkesgrupper, nisjer og settinger.
+</p>
+                </div>
+                <div class="kompetanse-img" data-aos="fade-left" data-aos-delay="300">
+                    <img src="images/secure.png" style="float:right">
+                </div>
+            </div>
+            <div class="kompetanse-item">
+              <div class="kompetanse-img" data-aos="fade-left" data-aos-delay="300">
+                  <img src="images/div1.png" style="float:left">
+              </div>
+                <div class="kompetanse-description" data-aos="fade-right" data-aos-delay="300">
+                    <h1><strong>Litt av hvert</strong></h1>
+                    <br>
+                    <p>Jeg har vært heldig å fått være med på mye forskjellig opp igjennom tiden, alt fra små festivaler til store LAN og holde tale på Vikingskipet på selveste 17.mai!
+                    <br><br>
+                        Det å kunne tilegne seg en slik bredde-kompetanse er helt unik og jeg setter enormt stor pris på alle opplevelsene jeg har fått deltatt på.
+                        Jeg elsker å prøve ut nye ting, få nye impulser og suge til meg alt av lærdom det kan bringe.
+                    <br><br>
+                        Jeg er opptatt av å være allsidig person og elsker det å dra elementer fra et fagområde inn i ett annet. Det å videreføre kunnskapen og erfaringene på
+                        tvers av fagområder har vært essensielt for mitt arbeid i frivillige organisasjoner og har i mange av tilfellene vært nøkkelen til successen.
+                        Gjenbruk er fin ting og jeg gleder meg til å se hva ting jeg kan ta med meg videre og bygge på i framtiden.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+    </section>
+
+    <section class="kontakt" id="kontakt">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Kontakt</h1>
+            </div>
+
+            <div class="kontakt-item">
+                <i class="fas fa-mobile-alt" data-aos="fade-right" data-aos-delay="300" href="tel:+4792653403"></i>
+                <div class="kontakt-description" data-aos="fade-left" data-aos-delay="300">
+                    <p>+47 92653403</p>
+                </div>
+            </div>
+            <div class="kontakt-item">
+                <a href="mailto:sebastian.kvamme@gmail.com">
+                <i class="far fa-envelope" data-aos="fade-right" data-aos-delay="300"></i>
+                <div class="kontakt-description" data-aos="fade-left" data-aos-delay="300">
+                    <p>sebastian.kvamme@gmail.com</p></a>
+                </div>
+            <div class="kontakt-item">
+                <a href="https://github.com/sebbeian">
+                <i class="fab fa-github-square" data-aos="fade-right" data-aos-delay="300"></i>
+                <div class="kontakt-description" data-aos="fade-left" data-aos-delay="300">
+                    <p>Github - Sebbeian</p></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cv" id="cv">
+        <div class="container">
+            <div class="section-heading">
+                <h1>CV</h1>
+            </div>
+            <div class="cv-item">
+                <h1 data-aos="zoom-in-up" data-aos-delay="300">Last ned CV i "papirform":</h1>
+                <br><br>
+                <div align="center"><a class="button2" href="https://drive.google.com/file/d/1WNyKT5SIWDIawg1XaWKqa7Dzu0Ssh8GH/view?usp=sharing" target="_blank" rel="nofollow noopener">Last Ned! (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <p>&copy; 2021 - Sebastian K. Bech</p>
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </footer>
+</body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="main.js"></script>
+</html>
